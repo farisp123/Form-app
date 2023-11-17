@@ -1,38 +1,95 @@
 .App {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  margin: 5px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  margin: 5px;
+  padding: 10px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background-color: lightgrey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th {
+  background-color: #f2f2f2;
+}
+
+/* Additional Styling */
+table {
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+td {
+  font-weight: normal;
+}
+
+.form-container {
+  background-color: #EAF0F1; /* Light background color */
+  padding: 20px; /* Add padding for better aesthetics */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
+  border-radius: 50px solid #ddd; /* Light border color */
+
+  /* Additional styling for form elements (adjust as needed) */
+  margin: 0;
+}
+
+/* Optional: Style form elements inside the form-container */
+.form-container form {
+  margin: 0; /* Remove default form margin */
+}
+
+.form-container label {
+  display: block; /* Display labels as blocks for better spacing */
+  margin-bottom: 8px; /* Add margin below labels for spacing */
+}
+
+.form-container input,
+.form-container textarea {
+  width: 95%; /* Make text input and textarea fill the container width */
+  padding: 8px; /* Add padding for better aesthetics */
+  margin-bottom: 16px; /* Add margin below inputs for spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.btn-user {
+  /* Your existing button styles */
+  padding: 10px 20px; /* Adjust padding to control button size */
+  font-size: 16px; /* Adjust font size to control button text size */
+  position: fixed;
+  top: 20px; /* Adjust the distance from the top as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+}
+
+
+.checkdiv {
+  background-color: grey; /* Set the background color to yellow */
+  padding: 10px; /* Optional: Add padding for better aesthetics */
+  /* Add other styles as needed */
+}
+.show-user-details {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
